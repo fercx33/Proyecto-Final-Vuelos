@@ -3,6 +3,10 @@ import VueloService from '../services/VueloService';
 import { useSearchParams } from 'react-router-dom';
 import { useNavigate, Link } from 'react-router-dom';
 
+
+/**
+ * Muestra los vuelos encontrados según el destino seleccionado.
+ */
 export const ListVuelosComponent = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();

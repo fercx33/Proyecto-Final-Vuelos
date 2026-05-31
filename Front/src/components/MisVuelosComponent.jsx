@@ -3,6 +3,10 @@ import ReservaService from '../services/ReservaService';
 import { useSearchParams } from 'react-router-dom';
 import { useNavigate, Link } from 'react-router-dom';
 
+
+/**
+ * Muestra el historial de vuelos reservados por los usuarios.
+ */
 export const MisvuelosComponent = () =>{
     const [reservas, setReservas] = useState([]);
 

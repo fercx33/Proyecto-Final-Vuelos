@@ -3,6 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import VueloService from "../services/VueloService";
 import ReservaService from "../services/ReservaService";
 
+
+/**
+ * Gestiona el proceso de reserva de un vuelo y el ingreso de datos del pasajero.
+ */
 function ReservaComponent() {
   const navigate = useNavigate();
   

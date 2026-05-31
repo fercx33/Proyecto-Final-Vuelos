@@ -1,6 +1,9 @@
 import axios from 'axios';
 const VUELO_BASE_REST_API_URL = "http://localhost:9000/api/v1/vuelos";
 
+/**
+ * Servicio encargado de las operaciones relacionadas con los vuelos.
+ */
 class VueloService{
     getAllVuelos(){
         return axios.get(VUELO_BASE_REST_API_URL);

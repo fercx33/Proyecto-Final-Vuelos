@@ -2,6 +2,10 @@ import "../styles/Navbar.css";
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png";
 
+
+/**
+ * Barra de navegación principal de la aplicación.
+ */
 function Navbar() {
   const links = [
     { to: "/", label: "Reservar" },
@@ -11,7 +15,6 @@ function Navbar() {
     <nav className="navbar-custom text-white">
       <div className="container d-flex justify-content-between align-items-center py-3">
 
-        {/* LOGO + NOMBRE */}
         <Link
           to="/"
           className="d-flex align-items-center text-white text-decoration-none"
@@ -28,7 +31,6 @@ function Navbar() {
           </h3>
         </Link>
 
-        {/* LINKS */}
         <div className="d-flex gap-3 align-items-center">
 
           <Link

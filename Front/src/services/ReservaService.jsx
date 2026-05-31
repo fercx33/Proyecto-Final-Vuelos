@@ -1,6 +1,9 @@
 import axios from 'axios';
 const RESERVA_BASE_REST_API_URL = "http://localhost:9000/api/v1/reservas";
 
+/**
+ * Servicio encargado de gestionar las reservas.
+ */
 class ReservaService{
     createReserva(reserva){
         return axios.post(`${RESERVA_BASE_REST_API_URL}/crear`, reserva);
