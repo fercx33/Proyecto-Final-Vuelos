@@ -1,0 +1,19 @@
+# React
+Front/node_modules/
+Front/dist/
+
+# Spring Boot
+SistemaVuelosSB/target/
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
