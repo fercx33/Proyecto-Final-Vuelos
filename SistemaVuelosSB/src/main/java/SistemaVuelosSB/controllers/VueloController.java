@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:5173/")
 @RequestMapping(path = "api/v1/vuelos")
 public class VueloController extends BaseControllerImpl<Vuelo, VueloServiceImpl>{
+    /**
+     * Busca vuelos por ciudad de destino.
+     */
     @GetMapping("/search")
     public ResponseEntity<?> search(@RequestParam String filtro){
         try{

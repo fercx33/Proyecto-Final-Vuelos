@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.*;
 public class ReservaController extends BaseControllerImpl<Reserva, ReservaServiceImpl>{
     @Autowired
     private ReservaService reservaService;
+    /**
+     * Procesa una nueva reserva de vuelo.
+     */
     @PostMapping("/crear")
     public ResponseEntity<?> crearReserva(
             @RequestBody ReservaDTO dto) {

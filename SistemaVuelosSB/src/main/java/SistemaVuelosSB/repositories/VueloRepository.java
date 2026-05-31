@@ -10,6 +10,7 @@ import java.util.List;
 
 @Repository
 public interface VueloRepository extends BaseRepository<Vuelo, Long>{
+    // Busca vuelos por nombre de ciudad.
     @Query(value = "SELECT DISTINCT v FROM Vuelo v JOIN v.aeropuertos ap WHERE ap.ciudad.nombreCiudad = :filtro")
     List<Vuelo> search(@Param("filtro") String filtro);
 

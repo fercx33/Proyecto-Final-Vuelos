@@ -6,6 +6,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
+/**
+ * DTO utilizado para transportar los datos necesarios
+ * para generar una reserva.
+ */
 @Getter
 @Setter
 @NoArgsConstructor
